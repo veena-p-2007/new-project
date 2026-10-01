@@ -1,0 +1,29 @@
+// Blueprint class
+class Car {
+    String brand;
+    int year;
+
+    // Constructor to initialize attributes
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+
+    // Class Method
+    public void displayDetails() {
+        System.out.println("Car Brand: " + brand + ", Year: " + year);
+    }
+}
+
+// Main execution class
+public class MainApp {
+    public static void main(String[] args) {
+        // Creating objects (instances) of the Car class
+        Car car1 = new Car("Toyota", 2022);
+        Car car2 = new Car("Tesla", 2025);
+
+        // Accessing object methods
+        car1.displayDetails();
+        car2.displayDetails();
+    }
+}
